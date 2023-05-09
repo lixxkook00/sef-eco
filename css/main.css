@@ -1886,15 +1886,6 @@ pre {
     margin: 0px 0px 30px;
 }
 
-hr {
-    clear: both;
-    border-top-style: ;
-    border-top-color: ;
-    border-width: 1px 0px 0px;
-    margin: 20px 0px;
-    height: 0px;
-    width: 100%;
-}
 
 hr.hr--clear {
     margin-top: 0px;
@@ -2665,9 +2656,9 @@ input.spr-button.spr-button-primary:active {
 
 .tbl-list > li.currency .flag-dropdown-menu, .header_language .disclosure #lang-list {
     left: auto;
-    right: 0px;
+    right: 15px;
     top: 100%;
-    min-width: 120px;
+    min-width: 100px;
     z-index: 4;
     position: absolute;
     display: none;
@@ -3728,32 +3719,6 @@ span.cart-products-count {
     vertical-align: middle;
 }
 
-#slidedown-cart {
-    line-height: 1.7;
-    position: fixed;
-    inset: 0px 0px 0px auto;
-    text-align: center;
-    width: 420px;
-    z-index: 999;
-    background: rgb(255, 255, 255);
-    border-top-color: ;
-    border-top-style: ;
-    border-top-width: ;
-    border-bottom-color: ;
-    border-bottom-style: ;
-    border-bottom-width: ;
-    border-left-color: ;
-    border-left-style: ;
-    border-left-width: ;
-    border-image-source: ;
-    border-image-slice: ;
-    border-image-width: ;
-    border-image-outset: ;
-    border-image-repeat: ;
-    border-right: none;
-    flex-direction: column;
-    display: flex;
-}
 
 #slidedown-cart .mini-cart-wrap {
     width: 100%;
@@ -5500,8 +5465,9 @@ body.template-search.search-open .page-wrapper::after {
 
 .tthorizontal_menu #tt-megamenu1 ul.tt_menus_ul1 li.tt_menu_item > a::after {
     position: absolute;
-    content: "";
+    content: "^";
     height: 20px;
+    transform: rotate(180deg);
     width: 20px;
     font-size: 16px;
     line-height: 22px;
@@ -5587,7 +5553,7 @@ body.template-search.search-open .page-wrapper::after {
         visibility: hidden;
         border-top: 2px solid var(--color-btn-primary);
         margin: 0px auto;
-        display: block !important;
+        display: flex;
     }
 
     .tthorizontal_menu #tt-megamenu1 .tt-mega_menu1 li.tt_menu_item:hover > .tt_sub_menu_wrap {
@@ -5603,40 +5569,6 @@ body.template-search.search-open .page-wrapper::after {
     .tthorizontal_menu #tt-megamenu1 .tt-mega_menu1 li.tt_menu_item.full-menu {
         position: static;
     }
-
-    .tthorizontal_menu #tt-megamenu1 li.more_menu.tt_menu_item ul.tt_menus_ul1 {
-        position: absolute;
-        margin: 0px;
-        width: 200px;
-        inset: 100% auto auto 0px;
-        text-align: left;
-        background: rgb(255, 255, 255);
-        border-right-color: ;
-        border-right-style: ;
-        border-right-width: ;
-        border-bottom-color: ;
-        border-bottom-style: ;
-        border-bottom-width: ;
-        border-left-color: ;
-        border-left-style: ;
-        border-left-width: ;
-        border-image-source: ;
-        border-image-slice: ;
-        border-image-width: ;
-        border-image-outset: ;
-        border-image-repeat: ;
-        border-radius: 0px 0px 4px 4px;
-        opacity: 0;
-        visibility: hidden;
-        z-index: 2;
-        border-top: 2px solid var(--color-btn-primary);
-        transform: scaleY(0);
-        transform-origin: center top 0px;
-        transition: all 0.4s ease-in-out 0s;
-        padding: 10px 0px;
-        display: block !important;
-    }
-
     .tthorizontal_menu #tt-megamenu1 li.more_menu.tt_menu_item:hover ul.tt_menus_ul1 {
         opacity: 1;
         visibility: visible;
@@ -11314,7 +11246,8 @@ span.spr-summary-caption {
     padding: 12px 45px;
     transition: all 400ms ease-in-out 0s;
     text-transform: uppercase;
-    border-radius: 0px;
+    border-radius: 5px;
+    border: none;
 }
 
 .shopify-payment-button .shopify-payment-button__button::after {
@@ -14519,7 +14452,7 @@ a.product-lightbox-btn.tip-top img {
 
 .product-information .product-info > p::after {
     position: absolute;
-    content: "";
+    /* content: ""; */
     font-family: "Material Design Icons";
     inset: 0px auto 0px 0px;
     margin: auto;
@@ -16168,6 +16101,8 @@ ul.product-size li .hidden img {
     opacity: 1;
     visibility: visible;
     left: 0px;
+    background-color: #FFB509;
+    padding: 2px 4px;
 }
 
 .product-short-list .product-price__sale-label {
@@ -19324,25 +19259,6 @@ body .compare-model .modal .modal-dialog .modal-content .close::after, body .com
 
 .template-cart .cart__quantity-td .cart__qty label {
     display: none;
-}
-
-.template-cart .table-responsive {
-    border-top-color: ;
-    border-top-style: ;
-    border-top-width: ;
-    border-right-color: ;
-    border-right-style: ;
-    border-right-width: ;
-    border-left-color: ;
-    border-left-style: ;
-    border-left-width: ;
-    border-image-source: ;
-    border-image-slice: ;
-    border-image-width: ;
-    border-image-outset: ;
-    border-image-repeat: ;
-    width: 100%;
-    border-bottom: none;
 }
 
 .template-cart .table-responsive table {
@@ -24135,7 +24051,7 @@ body.hover_style3 .categoryslider .category_slider_content .cat-slider {
 }
 
 .product-information .payment-content .payment-title::after {
-    content: "";
+    /* content: ""; */
     position: absolute;
     font-family: "Material Design Icons";
     inset: 0px 0px auto auto;
@@ -24477,29 +24393,6 @@ span.icon__fallback-text {
     padding: 0px;
 }
 
-.social-icon-content ul {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 0px auto;
-    vertical-align: top;
-    background: rgb(255, 255, 255);
-    border-top-color: ;
-    border-top-style: ;
-    border-top-width: ;
-    border-right-color: ;
-    border-right-style: ;
-    border-right-width: ;
-    border-bottom-color: ;
-    border-bottom-style: ;
-    border-bottom-width: ;
-    border-image-source: ;
-    border-image-slice: ;
-    border-image-width: ;
-    border-image-outset: ;
-    border-image-repeat: ;
-    border-left: none;
-}
 
 .main-social-icon li, .sticky-link-icon li {
     display: block;
@@ -24615,27 +24508,6 @@ span.icon__fallback-text {
     height: 176px;
 }
 
-.sticky-link-icon .link-icon-content {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    background: rgb(255, 255, 255);
-    border-top-color: ;
-    border-top-style: ;
-    border-top-width: ;
-    border-bottom-color: ;
-    border-bottom-style: ;
-    border-bottom-width: ;
-    border-left-color: ;
-    border-left-style: ;
-    border-left-width: ;
-    border-image-source: ;
-    border-image-slice: ;
-    border-image-width: ;
-    border-image-outset: ;
-    border-image-repeat: ;
-    border-right: none;
-}
 
 .sticky-link-icon li {
     height: 40px;
@@ -24672,7 +24544,7 @@ span.icon__fallback-text {
     margin: 0px 0px 15px;
 }
 
-.ttqtyprogress span.quantity, .ttqtyprogress span.QuantityAvailable {
+.QuantityAvailable {
     text-transform: capitalize;
     color: rgb(102, 102, 102);
     font-size: 14px;
@@ -24702,7 +24574,7 @@ span.icon__fallback-text {
     transition: all 400ms ease-in-out 0s;
 }
 
-.product-single .ttqtyprogress span.QuantityAvailable {
+.QuantityAvailable {
     font-size: 15px;
     font-weight: 500;
     color: rgb(255, 85, 85);
@@ -24711,7 +24583,7 @@ span.icon__fallback-text {
     align-items: center;
 }
 
-.product-single .ttqtyprogress span.quantity {
+.quantity {
     color: rgb(236, 0, 0);
     font-size: 18px;
     font-weight: 600;
@@ -28247,32 +28119,6 @@ div#annoucementbar {
     line-height: 14px;
 }
 
-.design_4 .product-additional span.discount-percentage {
-    vertical-align: top;
-    width: auto;
-    color: var(--color-btn-secondary-text);
-    padding: 10px;
-    border-radius: 8px;
-    font-style: ;
-    font-variant-ligatures: ;
-    font-variant-caps: ;
-    font-variant-numeric: ;
-    font-variant-east-asian: ;
-    font-variant-alternates: ;
-    font-stretch: ;
-    font-size: ;
-    line-height: ;
-    font-family: ;
-    font-optical-sizing: ;
-    font-kerning: ;
-    font-feature-settings: ;
-    font-variation-settings: ;
-    font-weight: 500;
-    text-transform: uppercase;
-    background: var(--color-btn-secondary);
-    display: table;
-}
-
 .design_4 .product-price__price, .design_4 .product-price__price .money, .design_4 .price, .design_4 price .money {
     font-size: 20px;
     line-height: 24px;
@@ -29117,11 +28963,11 @@ div#effectiveAppsProductVisitorsCounterElement span {
 }
 
 .header_1 .bottom_header_1 {
-    background-color: rgb(221, 44, 67);
+    background-color: #1677BC;
 }
 
 #tt-megamenu span.toggle_menu {
-    background: rgb(221, 44, 67);
+    background: #1677BC;
     color: rgb(255, 255, 255);
     display: flex;
     align-items: center;
@@ -29374,7 +29220,7 @@ div#effectiveAppsProductVisitorsCounterElement span {
 }
 
 .Newsletter-content {
-    background: rgb(221, 44, 67);
+    background: #1677BC;
 }
 
 .Newsletter-content .widget-title {
@@ -29443,4 +29289,22 @@ div#effectiveAppsProductVisitorsCounterElement span {
 
 .news-content {
     margin-bottom: 25px;
+}
+
+.currencies.active{
+    display: block !important;
+}
+
+.header_currency .tbl-list > li.currency .flag-dropdown-menu > li{
+    /* padding: 10px; */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 0;
+}
+
+.header_currency .tbl-list > li.currency .flag-dropdown-menu > li:hover{
+    cursor: pointer;
+    background-color: #ddd;
 }

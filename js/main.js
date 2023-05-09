@@ -66,3 +66,37 @@ const swiperBlogs = new Swiper(".swiper-blogs", {
         }
     },
 });
+
+const swiperCategories = new Swiper(".categories-product", {
+    slidesPerView: 9,
+    spaceBetween: 0,
+    // auto
+    // autoplay: {
+    //     delay: 500,
+    //     disableOnInteraction: false,
+    // },
+    loop:true,
+    loopedSlides: 50,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    speed: 2000,
+    breakpoints: {
+        // when window width is >= 480px
+        120: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        },
+        // when window width is >= 640px
+       // when window width is >= 640px
+        740: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+        },
+        1023: {
+            slidesPerView: 9,
+            spaceBetween: 0,
+        }
+    },
+});

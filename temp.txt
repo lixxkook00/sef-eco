@@ -216,9 +216,8 @@
                             <div class="owl-stage-outer">
                                 <div class="owl-stage"
                                     style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1692px;">
-                                    <div class="owl-item active" style="width: 188px;">
-                                        <div id="cat-featured-1647407950b0e646fc-0"
-                                            class="collection_cat_item col-xs-12">
+                                    
+                                        <div class="collection_cat_item col-xs-12">
                                             <a href="/collections/camera">
                                                 <div class="collection_img">
                                                     <img loading="lazy"
@@ -242,10 +241,9 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 188px;">
-                                        <div id="cat-featured-8f151242-1e50-46b9-b80f-dcd5da933027"
-                                            class="collection_cat_item col-xs-12">
+                                    
+                                    
+                                        <div class="collection_cat_item col-xs-12">
                                             <a href="/collections/headphones">
                                                 <div class="collection_img">
                                                     <img loading="lazy"
@@ -269,10 +267,9 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 188px;">
-                                        <div id="cat-featured-eb10cdc4-d731-48a3-9e0b-5c26df4e0e2d"
-                                            class="collection_cat_item col-xs-12">
+                                    
+                                    
+                                        <div class="collection_cat_item col-xs-12">
                                             <a href="/collections/headphones">
                                                 <div class="collection_img">
                                                     <img loading="lazy"
@@ -296,10 +293,9 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 188px;">
-                                        <div id="cat-featured-888477e2-c88f-46c7-8e8e-5aa26b7bd478"
-                                            class="collection_cat_item col-xs-12">
+                                    
+                                    
+                                        <div class="collection_cat_item col-xs-12">
                                             <a href="/collections/camera">
                                                 <div class="collection_img">
                                                     <img loading="lazy"
@@ -323,10 +319,9 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="owl-item active" style="width: 188px;">
-                                        <div id="cat-featured-c81a2c26-ae56-4e7e-8106-c26ff7e4d103"
-                                            class="collection_cat_item col-xs-12">
+                                    
+                                    
+                                        <div class="collection_cat_item col-xs-12">
                                             <a href="/collections/camera">
                                                 <div class="collection_img">
                                                     <img loading="lazy"
@@ -350,10 +345,9 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 188px;">
-                                        <div id="cat-featured-401baf27-1c43-45b8-b920-1a37f9ef1ba3"
-                                            class="collection_cat_item col-xs-12">
+                                    
+                                    
+                                        <div class="collection_cat_item col-xs-12">
                                             <a href="/collections/camera">
                                                 <div class="collection_img">
                                                     <img loading="lazy"
@@ -377,10 +371,9 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 188px;">
-                                        <div id="cat-featured-589c0960-eb1e-4e6e-9632-e89077988e70"
-                                            class="collection_cat_item col-xs-12">
+                                    
+                                    
+                                        <div class="collection_cat_item col-xs-12">
                                             <a href="/collections/headphones">
                                                 <div class="collection_img">
                                                     <img loading="lazy"
@@ -404,10 +397,9 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
-                                    <div class="owl-item" style="width: 188px;">
-                                        <div id="cat-featured-f45a7073-2d33-4530-af72-19cabdba55dc"
-                                            class="collection_cat_item col-xs-12">
+                                    
+                                    
+                                        <div class="collection_cat_item col-xs-12">
                                             <a href="/collections/headphones">
                                                 <div class="collection_img">
                                                     <img loading="lazy"
@@ -431,11 +423,10 @@
                                                     <p class="desc">6 Items</p>
                                                 </div>
                                             </a>
-                                        </div>
+                                    
                                     </div>
-                                    <div class="owl-item" style="width: 188px;">
-                                        <div id="cat-featured-a10a2c25-12ec-428d-8272-06cad37beaf2"
-                                            class="collection_cat_item col-xs-12">
+                                    
+                                        <div class="collection_cat_item col-xs-12">
                                             <a href="/collections/headphones">
                                                 <div class="collection_img">
                                                     <img loading="lazy"
@@ -459,7 +450,7 @@
                                                 </div>
                                             </a>
                                         </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                             <div class="owl-nav">

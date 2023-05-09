@@ -51,6 +51,24 @@
     .service-content{
         flex-direction: column;
     }
+
+    .header-logo {
+        height: 50px;
+    }
+
+    .product-form__buttons,
+    .breadcrumb-wrapper{
+        flex-direction: column;
+    }
+
+    .shopify-payment-button,
+    .shopify-payment-button__button{
+        width: 100%;
+    }
+
+    .login {
+        padding: 10px 20px;
+    }
 }
 
 
