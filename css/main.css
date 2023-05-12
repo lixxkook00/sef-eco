@@ -404,9 +404,9 @@ a, button, [role="button"], input, label, select, .disclosure__toggle, textarea 
     width: 91.6667%;
 }
 
-.show {
+/* .show {
     display: block !important;
-}
+} */
 
 .hide {
     display: none !important;

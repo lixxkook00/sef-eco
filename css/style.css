@@ -5,6 +5,14 @@ p{
   margin: 0;
 }
 
+ul{
+  margin-bottom: 0;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
 /* CUSTOM */
 @media (min-width:768px) {
   .container {
@@ -134,11 +142,12 @@ body{
 }
 
 .primary-button{
-  padding: 6px 8px;
+  padding: 12px 8px;
   background-color: #1677BC;
   margin-top: 6px;
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
+  text-align: center;
 }
 
 .collection_cat_item a{
@@ -255,7 +264,7 @@ body{
 /* MAIN */
 .header-top {
     background-color: rgb(234, 234, 234);
-    padding: 15px 0;
+    padding: 7px 0 7px;
 }
 
 .header-top-item {
@@ -381,6 +390,8 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: relative;
 }
 
 .header-nav-item-name{
@@ -815,4 +826,247 @@ body{
 
 .article__grid__inner {
   padding-bottom: 20px;
+}
+
+.header-top-dropdown{
+  position: relative;
+}
+
+.header-top-dropdown-content{
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  transform: translateX(-50%) scaleY(0);
+  transform-origin: top;
+  z-index: 2;
+  transition: all 0.5s ease-out;
+  opacity: 0;
+
+}
+
+.header-top-item:hover .header-top-dropdown-content{
+  opacity: 1;
+  cursor: pointer;
+  transform: translateX(-50%) scaleY(1);
+}
+
+.header-top-dropdown-item{
+  padding: 6px 8px;
+  min-width: 80px;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.header-top-dropdown-item:hover{
+  cursor: pointer;
+  background-color: #ddd;
+}
+
+.header-top-dropdown-icon {
+  width: 30px;
+  height: 20px;
+  margin-right: 4px;
+}
+
+.header-top-dropdown-icon img{
+  height: 100%;
+  width: auto;
+}
+
+.header-nav-main{
+  flex: 1;
+}
+
+.header-nav-item-down{
+  font-size: 10px;
+}
+
+.header-nav-wrap{
+  position: absolute;
+  top: 177%;
+  left: 0;
+  z-index: 2;
+  background-color: #fff;
+  padding: 10px 30px;
+  display: flex;
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.5s ease-in-out;
+  transform-origin: top;
+}
+
+.header-nav-wrap::after{
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background-color: transparent;
+}
+
+.header-nav-menu{
+  min-width: 160px;
+  margin-right: 20px;
+}
+
+.header-nav-title{
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.header-nav-linklist li{
+  font-size: 14px;
+  padding: 5px 0;
+}
+
+.header-nav-linklist li:hover a{
+  color: #1777BC;
+}
+
+.header-nav-item:hover{
+  cursor: pointer;
+}
+
+.header-nav-item:hover .header-nav-wrap{
+  opacity: 1;
+  transform: scaleY(1); 
+}
+
+.header-main-icons-item{
+  position: relative;
+}
+
+.account-action{
+  position: absolute;
+  top: 130%;
+  left: 0;
+
+  background-color: #fff;
+
+  z-index: 2;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+  opacity: 0;
+  transform: scaleY(0);
+  transition: all 0.5s ease-in-out;
+  transform-origin: top;
+}
+
+.account-action-item{
+  padding: 6px 16px;
+}
+
+.account-action-item i {
+  margin: 8px;
+}
+
+.account-action-item:hover{
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.header-main-icons-item-account:hover .account-action{
+  opacity: 1;
+  transform: scaleY(1); 
+}
+
+.header-main-icons-item:hover{
+  cursor: pointer;
+}
+
+.header-main-icons-item:hover .header-main-icons-item-title, 
+.header-main-icons-item:hover .header-main-icons-item-icon{
+  color: #1877BC;
+}
+
+.bags{
+  position: fixed;
+  top: 0;
+  right: 0;
+  right: -100%;
+  background-color: #fff;
+  height: 100vh;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.5s ease;
+  width: 25vw;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.bags.show{
+  right: 0;
+}
+
+.bags-header{
+  margin-bottom: 10px;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 30px 30px 0;
+}
+
+.bags-list{
+  flex: 1;
+  margin-top: 30px;
+  padding: 0 30px;
+}
+
+.bags-item{
+  position: relative;
+}
+
+.bags-img{
+  width: 180px;
+  height: 80px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid #ddd;
+
+  overflow: hidden;
+
+  object-fit: cover;
+
+  margin-right: 10px;
+}
+
+.bags-item-close{
+  position: absolute;
+  top: 4px;
+  right: 0px;
+}
+
+.bags-name{
+  width: 80%;
+  color: #273c99;
+  font-size: 13px;
+  font-weight: 500;
+
+  margin-bottom: 10px;
+}
+
+.bags-item .product-price-current{
+  font-size: 14px;
+}
+
+.bags-control{
+  background-color: #dddddd42;
+  padding: 30px;
+}
+
+.primary-button.gray{
+  background-color: #515151;
+}
+
+.bags-close{
+  cursor: pointer;
+  padding: 4px;
 }
