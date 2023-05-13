@@ -42,7 +42,7 @@
                                         <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png"
                                             alt="">
                                     </div>
-                                    <div>English</div>
+                                    <div class="header-top-dropdown-name">English</div>
                                 </div>
                                 <div class="header-top-dropdown-content">
                                     <div class="header-top-dropdown-item">
@@ -50,14 +50,14 @@
                                             <img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/2560px-Flag_of_the_United_States.svg.png"
                                                 alt="">
                                         </div>
-                                        <div>English</div>
+                                        <div class="header-top-dropdown-name">English</div>
                                     </div>
                                     <div class="header-top-dropdown-item">
                                         <div class="header-top-dropdown-icon">
                                             <img src="https://cdn.britannica.com/41/4041-004-D051B135/Flag-Vietnam.jpg"
                                                 alt="">
                                         </div>
-                                        <div>Vietnamese</div>
+                                        <div class="header-top-dropdown-name">Vietnamese</div>
                                     </div>
                                 </div>
                             </div>
@@ -72,35 +72,35 @@
                                     <div class="header-top-dropdown-icon">
                                         <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="">
                                     </div>
-                                    <div>USDT</div>
+                                    <div class="header-top-dropdown-name">USDT</div>
                                 </div>
 
                                 <div class="header-top-dropdown-content">
-                                    <div class="header-top-dropdown-item">
+                                    <div data-rate="2300" class="header-top-dropdown-item">
                                         <div class="header-top-dropdown-icon">
                                             <img src="/assets/images/logo.png" alt="">
                                         </div>
-                                        <div>SEF</div>
+                                        <div class="header-top-dropdown-name">SEF</div>
                                     </div>
-                                    <div class="header-top-dropdown-item">
+                                    <div data-rate="0.003" class="header-top-dropdown-item">
                                         <div class="header-top-dropdown-icon">
                                             <img src="https://s2.coinmarketcap.com/static/img/coins/200x200/1839.png"
                                                 alt="">
                                         </div>
-                                        <div>BNB</div>
+                                        <div class="header-top-dropdown-name">BNB</div>
                                     </div>
-                                    <div class="header-top-dropdown-item">
+                                    <div data-rate="23000" class="header-top-dropdown-item">
                                         <div class="header-top-dropdown-icon">
                                             <img src="https://img.uxwing.com/wp-content/themes/uxwing/download/banking-financ/vietnamese-dong-coin-outline-icon.png"
                                                 alt="">
                                         </div>
-                                        <div>VND</div>
+                                        <div class="header-top-dropdown-name">VND</div>
                                     </div>
-                                    <div class="header-top-dropdown-item">
+                                    <div data-rate="1" class="header-top-dropdown-item">
                                         <div class="header-top-dropdown-icon">
                                             <img src="https://cryptologos.cc/logos/tether-usdt-logo.png" alt="">
                                         </div>
-                                        <div>USDT</div>
+                                        <div class="header-top-dropdown-name">USDT</div>
                                     </div>
                                 </div>
                             </div>
@@ -2706,6 +2706,10 @@
         return document.querySelector(selector);
     }
 
+    const queryAll = (selector) => {
+        return document.querySelectorAll(selector);
+    }
+
     query('#checkout').onclick = () => {
         query('.bags').classList.add('show')
     }
@@ -2713,4 +2717,24 @@
     query('.bags-close').onclick = () => {
         query('.bags').classList.remove('show')
     }
+
+    // select dropdown
+    queryAll('.header-top-dropdown-item').forEach((item) => {
+        item.onclick = () => {
+            const icon = item.querySelector('.header-top-dropdown-icon img').src
+            const value = item.querySelector('.header-top-dropdown-name').innerText
+
+            item.parentNode.parentNode.querySelector('.header-top-dropdown-item-selected').querySelector('.header-top-dropdown-icon img').src = icon
+            item.parentNode.parentNode.querySelector('.header-top-dropdown-item-selected').querySelector('.header-top-dropdown-name').innerText = value
+
+            if (item.dataset.rate !== undefined) {
+                const rate = parseFloat(item.dataset.rate)
+
+                queryAll('.product-price-current').forEach(product => {
+                    product.innerText = `${product.dataset.price * rate} ${value}`
+                })
+            }
+        }
+    })
+
 </script>

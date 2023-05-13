@@ -413,6 +413,7 @@ body{
 }
 
 .header-search-dropdown-selected{
+  display: flex;
   border-right: 1px solid #ddd;
 }
 
