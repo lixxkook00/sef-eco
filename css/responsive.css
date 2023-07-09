@@ -133,6 +133,89 @@
     .content-name{
         font-size: 16px;
     }
+
+    .wallet-table-li{
+        flex-wrap: wrap;
+        padding: 20px 10px;
+    }
+
+    .wallet-table-quantity,
+    .wallet-table-name {
+        width: 50%;
+    }
+
+    .wallet-table{
+     border: none;   
+    }
+
+    .coin-balance-primary, .coin-balance-usd{
+        text-align: right;
+    }
+
+    .coin-name .coin-balance-usd{
+        display: none;
+    }
+
+    .coin-name .coin-balance-primary {
+        margin-bottom: 0;
+    }
+
+    .action-list{
+        margin-top: 10px;    
+    }
+
+    .wallet-table-actions{
+        width: 100%;
+    }
+    
+    .action-list{
+        justify-content: space-between;
+    }
+
+    .action-item{
+        width: 31%;
+        text-align: center;
+    }
+
+    .action-item:nth-child(1) {
+        background-color: #1777BC;
+        color: #fff;
+    }
+
+    .action-item:nth-child(2) {
+        border: 1px solid #1777BC;
+    }
+
+    .action-item:nth-child(3) {
+        background-color: #bebdbd;
+        border-color: #bebdbd;
+        color: #fff;
+    }
+
+    .wallet-table-title{
+        display: none !important;
+    }
+
+    .account-action{
+        left: -100%;
+    }
+
+    .bags{
+        width: 85vw;
+    }
+
+    .bags-list{
+        padding: 0 10px;
+    }
+
+    .bags-name{
+        width: 90%;
+    }
+
+    .bags-img {
+        width: 140px;
+        height: 70px;
+    }
 }
 
 
