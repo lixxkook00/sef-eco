@@ -3037,7 +3037,7 @@ input[type="text"], input[type="search"], input[type="password"], input[type="em
     width: 100%;
     max-width: 100%;
     display: block;
-    margin: 0px 0px 1em;
+    /* margin: 0px 0px 1em; */
     background: rgb(255, 255, 255);
 }
 
@@ -15930,9 +15930,9 @@ ul.product-size li .hidden img {
     margin-bottom: 25px;
 }
 
-:last-child {
+/* :last-child {
     border-bottom: none;
-}
+} */
 
 .products-grid-view {
     margin: 0px 0px 30px;
